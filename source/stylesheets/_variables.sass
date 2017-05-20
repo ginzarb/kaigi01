@@ -1,0 +1,38 @@
+//color
+$red: #d60004
+$purple: #673679
+$brown: #ceb291
+$ivory: #efeddf
+$white: #fff
+$black: #000
+$thin-gray: #f6f6f6
+$light-purple: #804c94
+
+$main-color: $red
+$text-color: $black
+$link-color: $red
+$hover-color: darken($red, 10%)
+$base-color: $ivory
+$line-color: rgba(0, 0, 0, .2)
+$sub-text-color: $purple
+
+//font
+$main-font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif
+
+@font-face
+  font-family: 'kanteiryu-local'
+  src: font-url('/images/A-OTF-KanteiryuStd-Ultra.otf')
+
+$font-kanteiryu: 勘亭流, "Kanteiryu"
+// ↓ローカルフォントテスト用（本番デプロイ時にコメントアウト）
+//$font-kanteiryu: 'kanteiryu-local'
+
+=kanteiryu
+  font-family: $font-kanteiryu
+
+//size
+
+$sponsor-xlg: 220px
+$sponsor-lg: 180px
+$sponsor-md: 135px
+$sponsor-sm: 90px

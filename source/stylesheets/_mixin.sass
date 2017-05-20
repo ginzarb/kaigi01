@@ -1,0 +1,89 @@
+//mixin
+=balloon-left($size: 6px, $color: #FFF, $top: 6px)
+  position: relative
+  &:after
+    position: absolute
+    content: ""
+    display: block
+    border: $size solid transparent
+    border-right: $size solid $color
+    top: $top
+    left: -1 * $size * 2
+
+=balloon-bottom($size: 6px, $color: #FFF, $left: 6px)
+  position: relative
+  &:after
+    position: absolute
+    content: ""
+    display: block
+    border: $size solid $color
+    border-bottom: $size solid transparent
+    border-left: $size solid transparent
+    border-right: $size solid transparent
+    bottom: -1 * $size * 2
+    left: $left
+
+=balloon-bottom-border($size: 6px, $color: #FFF, $left: 6px, $border_color: #CCC, $border: 1px)
+  position: relative
+  +balloon-bottom($size, $color, $left)
+  $size2 : $size + $border
+  &:before
+    position: absolute
+    content: ""
+    display: block
+    border: $size2 solid $border_color
+    border-bottom: $size2 solid transparent
+    border-left: $size2 solid transparent
+    border-right: $size2 solid transparent
+    bottom: -1 * $size2 * 2
+    left: $left - $border
+
+=corner-element($border-size: 10px)
+  content: ""
+  position: absolute 
+  z-index: 2
+  box-sizing: border-box
+  height: $border-size * 2
+  width: $border-size * 2
+  display: block
+  background-color: $text-color
+
+=avatar-frame($size: 180px)
+  $border-size: 10px
+  background-color: white
+  border: $border-size solid $text-color
+  height: $size + $border-size * 4
+  width: $size + $border-size * 4
+  margin-bottom: 10px
+  position: relative
+  z-index: 1
+  &:before
+    +corner-element($border-size)
+    border-left: $border-size solid $base-color
+    border-top: $border-size solid $base-color
+    top: - $border-size
+    left: - $border-size
+  &:after
+    +corner-element($border-size)
+    border-left: $border-size solid $base-color
+    border-bottom: $border-size solid $base-color
+    bottom: - $border-size
+    left: - $border-size
+  .avatar
+    padding: $border-size
+    position: relative
+    &:before
+      +corner-element
+      border-right: $border-size solid $base-color
+      border-top: $border-size solid $base-color
+      top: - $border-size
+      right: - $border-size
+    &:after
+      +corner-element
+      border-right: $border-size solid $base-color
+      border-bottom: $border-size solid $base-color
+      bottom: - $border-size
+      right: - $border-size
+  .avatar-image
+    height: $size
+    width: $size

@@ -1,0 +1,24 @@
+!!!
+%html
+  %head
+    %meta(charset='utf-8')
+    %title
+      ぎんざRuby会議 01 - ginza.rb
+    %meta(name='viewport' content='width=device-width, initial-scale=1')
+    %meta(property='og:title'     content='ぎんざRuby会議01 - ginza.rb')
+    %meta(property='og:site_name' content='ぎんざRuby会議01')
+    %meta(property='og:url'       content='https://ginzarb.github.io/kaigi01/')
+    %meta(property='og:type'      content='activity')
+    %meta(property='og:image'     content="")
+    %meta(name='twitter:site'      content='@ginzarb2')
+    %meta(name='description' content='ぎんざRuby会議10')
+    %meta(name='keywords'    content='rubykaigi, ruby会議, 2015')
+    %link{href: "apple-touch-icon.png", rel: "apple-touch-icon"}/
+    = javascript_include_tag 'https://code.jquery.com/jquery-2.0.3.min.js'
+    = javascript_include_tag 'all'
+    = stylesheet_link_tag 'all', media: 'all'
+    = favicon_tag 'favicon.png'
+    // モリサワ typesquare Webフォント用
+    %script{:charset => "utf-8", :src => "//typesquare.com/accessor/script/typesquare.js?iGLKZcOX2b4%3D", :type => "text/javascript"}
+  %body{ id: "#{@pageId}" }
+    = yield
