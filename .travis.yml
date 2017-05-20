@@ -11,3 +11,6 @@ env:
   - secure: BicsR2ZtZtaTXPoGU/rdX90NRGoyzzvVqH/a2LmXnwBD8P3FguF+0m+EGxfPUdN22UaWz5JdVcszZS7WFt8gf96YtrvdioA4Yxz1xxN+QKDEG6pAf60klfB4oc/mBKdkr62M6lIpg23hsAwKtqpqEjgUsn71MRp2NiC1OeXsKTHf+MDguqkK2DMImtASwz7P6IjkoSPloehijoujG+zataACK3NJPnHWAsJ4WnddiKwYu+mu/kz8WHpIDbhGXgKuX6wmk8/KB/FsFdI8fkUhv/CMmdH96yj6sCQZI4lLRNUSv914IuQXQ6aUlYOcz73obHO3kQ8vVaTnQvwVP+JTubKjKBIzrr8/TG3vZHVlat/VSqKiTogssPCfGjn6Yh5C7VchPmm8hgalKrcpEx412VFWRKE7x0GEjlwFj9fKcyhrl7cydYT2e1vhkgoppQGKlqwxjVcgNJdLIfB50F43MHFRrfx7QT4etmz70RbvL3/Z/sf1zD3tC/osuefOYHMP8HCBIzSFkQOMGBZm8ZFwiH0OTCiOzHfyVrtaO9mXkkln16YMPB+0i/XMs2W6+bN0Aw32aIM0KBeHt0S52pVxpvRkAicB0Vxnz3qQfmfJSksB31RZF4TAwOsGB56nTFQ/W0z96PusL+Rn2B5Xf6HLRZ9n+wT6u4Gsq16c6cZe6DA=
 after_success:
 - '[ "$TRAVIS_BRANCH" == "develop" ] && [ $GH_TOKEN ] && bundle exec middleman deploy >/dev/null 2>&1'
+branches:
+  only:
+    - develop
