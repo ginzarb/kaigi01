@@ -1,0 +1,177 @@
+.guest
+  display: flex
+  text-align: center
+  justify-content: center
+  +mq
+    width: 100%
+
+.guest__speaker
+  position: relative
+  $width: 260px
+  $height: 380px
+  width: $width
+  height: $height
+  background-image: image-url('speaker-amatsuda.png')
+  background-repeat: no-repeat
+  background-size: $width
+  padding-top: $width - 10px
+
+  +mq
+    $width: 150px
+    $height: 250px
+    width: $width
+    height: $height
+    background-size: $width
+    padding-top: $width - 5px
+
+  &.is-a_matsuda
+    margin-right: 10px
+    +mq
+      margin-right: 0
+
+    &:before
+      content: ''
+      display: block
+      position: absolute
+      top: -20px
+      left: -70px
+      $width: 85px
+      $height: 210px
+      width: $width
+      height: $height
+      background-image: image-url('pic-kuroko-4.png')
+      background-size: $width
+      background-repeat: no-repeat
+      animation: araburu .1s  infinite
+      +mq
+        $width: 50px 
+        $height: 150px
+        width: $width
+        height: $height
+        background-size: $width
+        left: -10px
+
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      bottom: -160px
+      right: -60px
+      $width: 110px
+      $height: 210px
+      width: $width
+      height: $height
+      background-image: image-url('pic-kuroko-5.png')
+      background-size: $width
+      background-repeat: no-repeat
+      animation: araburu .1s  infinite
+      +mq
+        $width: 70px
+        $height: 160px
+        width: $width
+        height: $height
+        background-size: $width
+        bottom: -100px
+        right: -30px
+
+  &.is-kamipo
+    background-image: image-url('speaker-kamipo.png')
+
+    &:before
+      content: ''
+      display: block
+      position: absolute
+      top: -20px
+      right: -150px
+      $width: 140px
+      $height: 210px
+      width: $width
+      height: $height
+      background-image: image-url('pic-kuroko-3.png')
+      background-size: $width
+      background-repeat: no-repeat
+      animation: araburu .1s  infinite
+      +mq
+        display: none
+
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      bottom: -80px
+      right: -60px
+      $width: 100px
+      $height: 210px
+      width: $width
+      height: $height
+      background-image: image-url('pic-kuroko-6.png')
+      background-size: $width
+      background-repeat: no-repeat
+      animation: araburu .1s  infinite
+      +mq
+        $width: 70px
+        $height: 110px
+        width: $width
+        height: $height
+        background-size: $width
+        right: -20px
+        bottom: -30px
+
+.guest__image
+  width: 260px
+
+.guest__name
+  position: absolute
+  top: 24px
+  right: 8px
+  color: white
+  +kanteiryu
+  font-size: 38px
+  -webkit-writing-mode: vertical-rl
+  -ms-writing-mode: tb-rl
+  writing-mode: vertical-rl
+  +mq
+    font-size: 24px
+
+.guest__id
+  +kanteiryu
+  color: white
+  font-size: 24px
+  +mq
+    font-size: 16px
+    line-height: 1.5
+
+.guest__link
+  display: flex
+  justify-content: center
+
+.guest__sns-link
+  &:hover
+    animation: araburu .1s  infinite
+
+.guest__twitter
+  $width: 40px
+  width: $width
+  margin-right: 10px
+  +mq
+    width: 28px
+
+.guest__github
+  $width: 40px
+  width: $width
+  +mq
+    width: 28px
+
+.guest__turret
+  $width: 250px
+  position: absolute
+  bottom: -115px
+  left: 15%
+  width: $width
+  &:hover
+    animation: araburu .1s  infinite
+  +mq
+    left: 50%
+    $width: 180px
+    width: $width
+    margin-left: $width / 2 * -1

@@ -1,0 +1,107 @@
+.description
+  text-align: center
+
+.description__date
+  font-size: 30px
+  line-height: 1.6
+  +kanteiryu
+  +mq
+    font-size: 24px
+
+.description__venue
+  font-size: 20px
+  line-height: 1.6
+  +kanteiryu
+  +mq
+    font-size: 15px
+
+.description__theme
+  font-size: 30px
+  line-height: 1.6
+  +kanteiryu
+  +mq
+    font-size: 24px
+
+.description__button-box
+  text-align: center
+  margin: 20px auto 35px
+  +mq
+    margin: 10px auto 20px
+
+.description__btn-cfp
+  $width: 400px
+  $height: 96px
+  display: inline-block
+  width: $width
+  height: $height
+  background-image: image-url('pic-button.png')
+  background-size: $width $height
+  background-repeat: no-repeat
+  +kanteiryu
+  color: $text-color
+  font-size: 22px
+  line-height: $height - 5px
+  position: relative
+  left: -10px
+  +mq
+    $width: 260px
+    $height: 76px
+    width: $width
+    height: $height
+    background-size: $width $height
+    font-size: 17px
+    line-height: $height - 5px
+
+  &:before
+    content: ''
+    display: block
+    position: absolute
+    top: -10px
+    left: 0
+    $width: 64px
+    $height: 142px
+    width: $width
+    height: $height
+    background-image: image-url('pic-kuroko-1.png')
+    background-size: $width
+    background-repeat: no-repeat
+    +mq
+      left: -16px
+      $width: 46px
+      $height: 90px
+      width: $width
+      height: $height
+      background-size: $width
+
+  &:after
+    content: ''
+    display: block
+    position: absolute
+    top: -10px
+    right: -60px
+    $width: 120px
+    $height: 110px
+    width: $width
+    height: $height
+    background-image: image-url('pic-kuroko-2.png')
+    background-size: $width
+    background-repeat: no-repeat
+    +mq
+      $width: 90px
+      $height: 90px
+      right: -50px
+      width: $width
+      height: $height
+      background-size: $width
+
+  &:hover
+    color: white
+    animation: araburu .1s  infinite;
+
+.description__text
+  font-size: 14px
+  line-height: 1.9
+  +mq
+    font-size: 11px
+    text-align: left
+    padding: 0 10px
