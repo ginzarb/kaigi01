@@ -1,0 +1,16 @@
+%section.section.section--guest
+  %h2 ゲスト講演
+  .guest
+    .guest__speaker.is-a_matsuda
+      .guest__name 松田 明
+      .guest__id='@a_matsuda'
+      .guest__link
+        =link_to image_tag('icon-twitter.png', class: 'guest__twitter'), 'https://twitter.com/a_matsuda', target:"_blank", class: 'guest__sns-link'
+        =link_to image_tag('icon-github.png', class: 'guest__github'), 'https://github.com/amatsuda', target: '_blank', class: 'guest__sns-link'
+    .guest__speaker.is-kamipo
+      .guest__name 上薗 竜太
+      .guest__id='@kamipo'
+      .guest__link
+        =link_to image_tag('icon-twitter.png', class: 'guest__twitter'), 'https://twitter.com/kamipo', target:"_blank", class: 'guest__sns-link'
+        =link_to image_tag('icon-github.png', class: 'guest__github'), 'https://github.com/kamipo', target: '_blank', class: 'guest__sns-link'
+    =image_tag('pic-turret.png', class: 'guest__turret')
