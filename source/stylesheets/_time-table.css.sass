@@ -1,0 +1,150 @@
+.time-table
+  position: relative
+  width: 520px
+  margin: 0 auto
+  padding-bottom: 180px
+  $size: 260px
+  background-image: image-url('pic-tourists.png')
+  background-repeat: no-repeat
+  background-position: 30% bottom
+  background-size: $size
+  +mq
+    width: 320px
+    $size: 190px
+    background-position: 10% bottom
+    background-size: $size
+
+.time-table__table
+  width: 520px
+  background-image: image-url('pic-railroad.png')
+  background-size: 75px
+  background-repeat: no-repeat
+  background-position: 85px 0
+  +mq
+    width: 320px
+    background-size: 60px
+    background-position: 60px 0
+
+.time-table__th
+  +kanteiryu
+  width: 80px
+  text-align: right
+  padding: 15px 20px
+  vertical-align: top
+  color: $main-color
+  background-image: image-url('pic-line--short.png')
+  background-repeat: no-repeat
+  background-size: 70px
+  font-size: 18px
+  +mq
+    padding: 10px 20px
+    font-size: 14px
+    width: 40px
+    background-size: 60px
+
+.time-table__td
+  padding: 25px 20px 10px
+  padding-left: 80px
+  vertical-align: top
+  background-image: image-url('pic-line--long.png')
+  background-repeat: no-repeat
+  background-size: 440px
+  background-position: -20px 0
+  +mq
+    padding: 20px 20px 10px
+    background-size: 250px
+    padding-left: 50px
+
+.time-table__hl
+  +kanteiryu
+  font-size: 24px
+  margin-top: 0
+  margin-bottom: 0
+  +mq
+    font-size: 18px
+
+.time-table__speaker
+  margin: 10px 0 0
+
+.time-table__speaker-image
+  $size: 46px
+  height: $size
+  width: $size
+  float: left
+  margin-right: 10px
+  border: 3px solid #000
+  +mq
+    margin-right: 5px
+    $size: 32px
+    height: $size
+    width: $size
+
+.time-table__speaker-name
+  +kanteiryu
+  font-size: 22px
+  line-height: 1
+  padding-top: 5px
+  margin-bottom: 5px
+  +mq
+    padding-top: 0
+    font-size: 18px
+    margin-bottom: 2px
+
+.time-table__speaker-data
+  overflow: hidden
+
+.time-table__speaker-id
+  +kanteiryu
+  font-size: 16px
+  color: $main-color
+  line-height: 1
+  +mq
+    font-size: 11px
+
+.time-table__tote
+  $width: 95px
+  width: $width
+  position: absolute
+  top: -40px
+  right: 30px
+  +mq
+    $width: 70px
+    width: $width
+    top: -40px
+    right: 20px
+
+.time-table__macbook
+  $width: 100px
+  width: $width
+  position: absolute
+  top: 180px
+  right: -30px
+  +mq
+    $width: 70px
+    width: $width
+    top: 180px
+    right: 10px
+
+.time-table__backpack
+  $width: 120px
+  width: $width
+  position: absolute
+  top: 460px
+  left: -100px
+  +mq
+    $width: 90px
+    width: $width
+    top: 400px
+    left: 250px
+
+.time-table__bicycle
+  $width: 140px
+  width: $width
+  position: absolute
+  bottom: 160px
+  right: -50px
+  +mq
+    $width: 100px
+    width: $width
+    bottom: 100px
+    right: 0px
