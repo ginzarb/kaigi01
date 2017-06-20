@@ -42,11 +42,11 @@
         %td.time-table__td
           %h3.time-table__hl
             ActiveSupport::Multibyte::Unicode::UnicodeDatabase を消したかった
-            .time-table__speaker
-              =image_tag('https://avatars3.githubusercontent.com/u/1796864?v=3&s=400', class: 'time-table__speaker-image')
-              .time-table__speaker-data
-                .time-table__speaker-name Fumiaki MATSUSHIMA
-                .time-table__speaker-id=link_to '@mtsmfm', 'https://github.com/mtsmfm', target: '_blank'
+          .time-table__speaker
+            =image_tag('https://avatars3.githubusercontent.com/u/1796864?v=3&s=400', class: 'time-table__speaker-image')
+            .time-table__speaker-data
+              .time-table__speaker-name Fumiaki MATSUSHIMA
+              .time-table__speaker-id=link_to '@mtsmfm', 'https://github.com/mtsmfm', target: '_blank'
 
       %tr
         %th.time-table__th
@@ -54,11 +54,11 @@
         %td.time-table__td
           %h3.time-table__hl
             マイクロサービス指向 Rails API 開発ガイド
-            .time-table__speaker
-              =image_tag('https://pbs.twimg.com/profile_images/871683711/murmur_400x400.png', class: 'time-table__speaker-image')
-              .time-table__speaker-data
-                .time-table__speaker-name qsona
-                .time-table__speaker-id=link_to '@qsona', 'https://github.com/qsona', target: '_blank'
+          .time-table__speaker
+            =image_tag('https://pbs.twimg.com/profile_images/871683711/murmur_400x400.png', class: 'time-table__speaker-image')
+            .time-table__speaker-data
+              .time-table__speaker-name qsona
+              .time-table__speaker-id=link_to '@qsona', 'https://github.com/qsona', target: '_blank'
 
       %tr
         %th.time-table__th
@@ -66,11 +66,11 @@
         %td.time-table__td
           %h3.time-table__hl
             Rails を仕事にする会社で新卒が 1 年間学んだこと
-            .time-table__speaker
-              =image_tag('https://avatars2.githubusercontent.com/u/4271086?v=3&s=400', class: 'time-table__speaker-image')
-              .time-table__speaker-data
-                .time-table__speaker-name Junichi Kobayashi
-                .time-table__speaker-id=link_to '@junk0612', 'https://github.com/junk0612', target: '_blank'
+          .time-table__speaker
+            =image_tag('https://avatars2.githubusercontent.com/u/4271086?v=3&s=400', class: 'time-table__speaker-image')
+            .time-table__speaker-data
+              .time-table__speaker-name Junichi Kobayashi
+              .time-table__speaker-id=link_to '@junk0612', 'https://github.com/junk0612', target: '_blank'
 
       %tr
         %th.time-table__th
@@ -85,11 +85,11 @@
         %td.time-table__td
           %h3.time-table__hl
             Spring Frameworkと比較して学ぶ、Webアプリケーションフレームワークの責務分割
-            .time-table__speaker
-              =image_tag('https://avatars0.githubusercontent.com/u/1232216?v=3&s=400', class: 'time-table__speaker-image')
-              .time-table__speaker-data
-                .time-table__speaker-name onigra
-                .time-table__speaker-id=link_to '@onigra', 'https://github.com/onigra', target: '_blank'
+          .time-table__speaker
+            =image_tag('https://avatars0.githubusercontent.com/u/1232216?v=3&s=400', class: 'time-table__speaker-image')
+            .time-table__speaker-data
+              .time-table__speaker-name onigra
+              .time-table__speaker-id=link_to '@onigra', 'https://github.com/onigra', target: '_blank'
 
       %tr
         %th.time-table__th
@@ -97,11 +97,11 @@
         %td.time-table__td
           %h3.time-table__hl
             Railsアプリケーションのパフォーマンス改善手法
-            .time-table__speaker
-              =image_tag('https://avatars3.githubusercontent.com/u/3138447?v=3&s=400', class: 'time-table__speaker-image')
-              .time-table__speaker-data
-                .time-table__speaker-name k0kubun
-                .time-table__speaker-id=link_to '@k0kubun', 'https://github.com/k0kubun', target: '_blank'
+          .time-table__speaker
+            =image_tag('https://avatars3.githubusercontent.com/u/3138447?v=3&s=400', class: 'time-table__speaker-image')
+            .time-table__speaker-data
+              .time-table__speaker-name k0kubun
+              .time-table__speaker-id=link_to '@k0kubun', 'https://github.com/k0kubun', target: '_blank'
 
       %tr
         %th.time-table__th
@@ -116,21 +116,27 @@
         %td.time-table__td
           %h3.time-table__hl
             LT Time
-            %br
-            %br
-            * Application Templateのススメ( Takafumi ONAKA )
-            %br
-            %br
-            * Railsフロントエンドのmodernizeの一事例 -decaffeinateからES2015移行まで( treby )
-            %br
-            %br
-            * 歴史あるPHPアプリケーションのジョブキューシステムのリプレース( hypermkt )
-            %br
-            %br
-            * サービス中断を伴うメンテナンスを極力避けてゲームの運用をしている話( Takeo Fujitaa )
-            %br
-            %br
-            * 似非サービスクラスの殺し方( joker1007 )
+          %ul.time-table__lt
+            %li.time-table__lt-li
+              %h4.time-table__lt-title
+                Application Templateのススメ
+              = link_to '@onk', 'https://github.com/onk', target: "_blank", class: 'time-table__lt-speaker'
+            %li.time-table__lt-li
+              %h4.time-table__lt-title
+                Railsフロントエンドのmodernizeの一事例 -decaffeinateからES2015移行まで
+              = link_to '@treby', 'https://github.com/treby', target: "_blank", class: 'time-table__lt-speaker'
+            %li.time-table__lt-li
+              %h4.time-table__lt-title
+                歴史あるPHPアプリケーションのジョブキューシステムのリプレース
+              = link_to '@hypermkt', 'https://github.com/hypermkt', target: "_blank", class: 'time-table__lt-speaker'
+            %li.time-table__lt-li
+              %h4.time-table__lt-title
+                サービス中断を伴うメンテナンスを極力避けてゲームの運用をしている話
+              = link_to '@tkeo', 'https://github.com/tkeo', target: "_blank", class: 'time-table__lt-speaker'
+            %li.time-table__lt-li
+              %h4.time-table__lt-title
+                似非サービスクラスの殺し方
+              = link_to '@joker1007', 'https://github.com/joker1007', target: "_blank", class: 'time-table__lt-speaker'
 
       %tr
         %th.time-table__th
