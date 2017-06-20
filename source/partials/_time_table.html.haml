@@ -1,0 +1,171 @@
+%section.section.section--time-table
+  %h2 タイムテーブル
+  .time-table
+    %table.time-table__table
+      %tr
+        %th.time-table__th
+          12:00
+        %td.time-table__td
+          %h3.time-table__hl
+            開場
+
+      %tr
+        %th.time-table__th
+          13:00
+        %td.time-table__td
+          %h3.time-table__hl
+            開幕のごあいさつ
+
+      %tr
+        %th.time-table__th
+          13:05
+        %td.time-table__td
+          %h3.time-table__hl
+            基調講演
+
+          .time-table__speaker
+            =image_tag('https://pbs.twimg.com/profile_images/1241352454/face_icon.jpg', class: 'time-table__speaker-image')
+            .time-table__speaker-data
+              .time-table__speaker-name 松田 明
+              .time-table__speaker-id=link_to '@a_matsuda', 'https://github.com/amatsuda', target: '_blank'
+
+      %tr
+        %th.time-table__th
+          13:50
+        %td.time-table__td
+          %h3.time-table__hl
+            スポンサーLT
+
+      %tr
+        %th.time-table__th
+          13:55
+        %td.time-table__td
+          %h3.time-table__hl
+            ActiveSupport::Multibyte::Unicode::UnicodeDatabase を消したかった
+          .time-table__speaker
+            =image_tag('https://avatars3.githubusercontent.com/u/1796864?v=3&s=400', class: 'time-table__speaker-image')
+            .time-table__speaker-data
+              .time-table__speaker-name Fumiaki MATSUSHIMA
+              .time-table__speaker-id=link_to '@mtsmfm', 'https://github.com/mtsmfm', target: '_blank'
+
+      %tr
+        %th.time-table__th
+          14:20
+        %td.time-table__td
+          %h3.time-table__hl
+            マイクロサービス指向 Rails API 開発ガイド
+          .time-table__speaker
+            =image_tag('https://pbs.twimg.com/profile_images/871683711/murmur_400x400.png', class: 'time-table__speaker-image')
+            .time-table__speaker-data
+              .time-table__speaker-name qsona
+              .time-table__speaker-id=link_to '@qsona', 'https://github.com/qsona', target: '_blank'
+
+      %tr
+        %th.time-table__th
+          14:45
+        %td.time-table__td
+          %h3.time-table__hl
+            Rails を仕事にする会社で新卒が 1 年間学んだこと
+          .time-table__speaker
+            =image_tag('https://avatars2.githubusercontent.com/u/4271086?v=3&s=400', class: 'time-table__speaker-image')
+            .time-table__speaker-data
+              .time-table__speaker-name Junichi Kobayashi
+              .time-table__speaker-id=link_to '@junk0612', 'https://github.com/junk0612', target: '_blank'
+
+      %tr
+        %th.time-table__th
+          15:10
+        %td.time-table__td
+          %h3.time-table__hl
+            Afternoon Break
+
+      %tr
+        %th.time-table__th
+          15:35
+        %td.time-table__td
+          %h3.time-table__hl
+            Spring Frameworkと比較して学ぶ、Webアプリケーションフレームワークの責務分割
+          .time-table__speaker
+            =image_tag('https://avatars0.githubusercontent.com/u/1232216?v=3&s=400', class: 'time-table__speaker-image')
+            .time-table__speaker-data
+              .time-table__speaker-name onigra
+              .time-table__speaker-id=link_to '@onigra', 'https://github.com/onigra', target: '_blank'
+
+      %tr
+        %th.time-table__th
+          16:00
+        %td.time-table__td
+          %h3.time-table__hl
+            Railsアプリケーションのパフォーマンス改善手法
+          .time-table__speaker
+            =image_tag('https://avatars3.githubusercontent.com/u/3138447?v=3&s=400', class: 'time-table__speaker-image')
+            .time-table__speaker-data
+              .time-table__speaker-name k0kubun
+              .time-table__speaker-id=link_to '@k0kubun', 'https://github.com/k0kubun', target: '_blank'
+
+      %tr
+        %th.time-table__th
+          16:25
+        %td.time-table__td
+          %h3.time-table__hl
+            スポンサーLT
+
+      %tr
+        %th.time-table__th
+          16:30
+        %td.time-table__td
+          %h3.time-table__hl
+            LT Time
+          %ul.time-table__lt
+            %li.time-table__lt-li
+              %h4.time-table__lt-title
+                Application Templateのススメ
+              = link_to '@onk', 'https://github.com/onk', target: "_blank", class: 'time-table__lt-speaker'
+            %li.time-table__lt-li
+              %h4.time-table__lt-title
+                Railsフロントエンドのmodernizeの一事例 -decaffeinateからES2015移行まで
+              = link_to '@treby', 'https://github.com/treby', target: "_blank", class: 'time-table__lt-speaker'
+            %li.time-table__lt-li
+              %h4.time-table__lt-title
+                歴史あるPHPアプリケーションのジョブキューシステムのリプレース
+              = link_to '@hypermkt', 'https://github.com/hypermkt', target: "_blank", class: 'time-table__lt-speaker'
+            %li.time-table__lt-li
+              %h4.time-table__lt-title
+                サービス中断を伴うメンテナンスを極力避けてゲームの運用をしている話
+              = link_to '@tkeo', 'https://github.com/tkeo', target: "_blank", class: 'time-table__lt-speaker'
+            %li.time-table__lt-li
+              %h4.time-table__lt-title
+                似非サービスクラスの殺し方
+              = link_to '@joker1007', 'https://github.com/joker1007', target: "_blank", class: 'time-table__lt-speaker'
+
+      %tr
+        %th.time-table__th
+          17:00
+        %td.time-table__td
+          %h3.time-table__hl
+            休憩
+
+      %tr
+        %th.time-table__th
+          17:10
+        %td.time-table__td
+          %h3.time-table__hl
+            スポンサーLT
+
+      %tr
+        %th.time-table__th
+          17:15
+        %td.time-table__td
+          %h3.time-table__hl
+            基調Q&A
+
+          .time-table__speaker
+            =image_tag('https://pbs.twimg.com/profile_images/378800000433176090/1178e800687095ff11c540ddead1f4ff.png', class: 'time-table__speaker-image')
+            .time-table__speaker-data
+              .time-table__speaker-name 上薗 竜太
+              .time-table__speaker-id=link_to '@kamipo', 'https://github.com/kamipo', target: '_blank'
+
+    =image_tag('pic-tote.png', class: 'time-table__tote')
+    =image_tag('pic-macbook.png', class: 'time-table__macbook')
+    =image_tag('pic-backpack.png', class: 'time-table__backpack')
+    =image_tag('pic-bicycle.png', class: 'time-table__bicycle')
